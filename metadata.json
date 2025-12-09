@@ -1,0 +1,5 @@
+{
+  "name": "3D設計入門-其他功能",
+  "description": "A minimalist 3D building application allowing users to construct structures using cubes and triangular prisms on a grid.",
+  "requestFramePermissions": []
+}
