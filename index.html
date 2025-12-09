@@ -4,60 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voxel Builder 3D</title>
-
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-      body, html { 
-        margin: 0; 
-        padding: 0; 
-        height: 100%; 
-        overflow: hidden; 
-        background-color: #1a1a1a; 
-      }
+      body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #1a1a1a; }
       #root { height: 100%; width: 100%; }
     </style>
-
-    <!-- Import Map -->
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://aistudiocdn.com/react@^19.2.1",
-        "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1",
-        "react/": "https://aistudiocdn.com/react@^19.2.1/",
-        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-        "three": "https://aistudiocdn.com/three@^0.181.2",
-        "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
-        "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7"
-      }
-    }
-    </script>
-
-    <!-- Import Map Shim (for Safari / older browsers) -->
-    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.8.0/dist/es-module-shims.min.js"></script>
-  </head>
-
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7"
+  }
+}
+</script>
+</head>
   <body>
     <div id="root"></div>
-
-    <!-- 🔥 React App 入口，一定要有，否則永遠白畫面 -->
-    <script type="module">
-      import React from "react";
-      import { createRoot } from "react-dom/client";
-
-      // TODO: 你可以把這裡換成你的 App.tsx 的內容
-      function App() {
-        return (
-          <div class="text-white text-center mt-10 text-3xl">
-            Voxel Builder 3D Loaded ✔
-          </div>
-        );
-      }
-
-      const root = createRoot(document.getElementById("root"));
-      root.render(<App />);
-    </script>
-
   </body>
 </html>
